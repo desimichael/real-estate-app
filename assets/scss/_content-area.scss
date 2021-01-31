@@ -68,7 +68,7 @@
               margin-bottom: 10px;
             }
             select {
-              width: 100px;
+              // width: 100%;
               background: transparent;
               border: 1px solid var(--primary-color);
               border-radius: 2px;
@@ -122,17 +122,17 @@
             font-weight: 700;
             font-size: .9rem;
           }
-          .subtitle {
-            font-weight: 300;
-            margin-right: 5px;
-            font-size: .9rem;
-          }
           &-group {
             display: flex;
             &-item {
               display: flex;
               align-items: center;
               margin-right: 10px;
+            .subtitle {
+              font-weight: 500;
+              margin-right: 5px;
+              font-size: .9rem;
+            }
               input[type="checkbox"] {
                 cursor: pointer;
               }
@@ -173,7 +173,7 @@
         // height: 100vh;
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(var(--auto-grid-min-size),1fr));
-        gap: 15px;
+        gap: 20px;
         .listing__card {
           cursor: pointer;
           &:hover {
@@ -189,6 +189,7 @@
             display: block;
             position: relative;
             object-fit: cover;
+            object-position: center;
             z-index: 1;
             transition: .3s ease-in-out;
             img {
